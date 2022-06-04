@@ -1,0 +1,92 @@
+.dropdown-toggle.active-dropdown::after {
+    transform: rotate(-90deg);
+}
+
+
+
+/*=-====Bootstrapthemes.co btco-hover-menu=====*/
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+	color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:focus{
+	color: #fff;
+}
+.btco-hover-menu a ,  .navbar > li > a {
+    text-transform: capitalize;
+    padding: 8px 15px;
+    color: #fff;
+    font-size: 13px;
+    
+}
+.btco-hover-menu .active a,
+.btco-hover-menu .active a:focus,
+.btco-hover-menu .active a:hover,
+.btco-hover-menu li a:hover,
+.btco-hover-menu li a:focus ,
+.navbar>.show>a,  .navbar>.show>a:focus,  .navbar>.show>a:hover{
+    color: #fff;
+    background: transparent;
+    outline: 0;
+}
+
+
+
+/*submenu style start from here*/
+
+
+.dropdown-menu {
+    padding: 0px; 
+    margin: 0 0 0; 
+    border: 0px solid transition !important;
+    border-radius: 0px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    color: #fff;
+    border-top: 2px solid #4cd137;
+
+}
+
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #fff;
+}
+
+/*first level*/
+.btco-hover-menu .collapse ul > li:hover > a{background: #4cd137; }
+.btco-hover-menu .collapse ul ul > li:hover > a, .navbar .show .dropdown-menu > li > a:focus, .navbar .show .dropdown-menu > li > a:hover{background: #4cd137; color: #fff; }
+/*second level*/
+.btco-hover-menu .collapse ul ul ul > li:hover > a{background: #4cd137; }
+
+/*third level*/
+.btco-hover-menu .collapse ul ul, .btco-hover-menu .collapse ul ul.dropdown-menu{background:rgb(15, 17, 18,0.9);}
+.btco-hover-menu .collapse ul ul ul, .btco-hover-menu .collapse ul ul ul.dropdown-menu{background:rgb(15, 17, 18,0.9);}
+.btco-hover-menu .collapse ul ul ul ul, .btco-hover-menu .collapse ul ul ul ul.dropdown-menu{background:rgb(15, 17, 18,0.9);}
+
+/*Drop-down menu work on hover*/
+.btco-hover-menu{background: none;margin: 0;padding: 0;min-height:20px}
+
+@media only screen and (max-width: 991px) {
+    .btco-hover-menu .show > .dropdown-toggle::after{
+        transform: rotate(-90deg);
+    }
+}
+@media only screen and (min-width: 991px) {
+
+    .btco-hover-menu .collapse ul li{position:relative;}
+    .btco-hover-menu .collapse ul li:hover> ul{display:block}
+    .btco-hover-menu .collapse ul ul{position:absolute;top:100%;left:0;min-width:250px;display:none}
+    /*******/
+    .btco-hover-menu .collapse ul ul li{position:relative}
+    .btco-hover-menu .collapse ul ul li:hover> ul{display:block}
+    .btco-hover-menu .collapse ul ul ul{position:absolute;top:0;left:100%;min-width:250px;display:none}
+    /*******/
+    .btco-hover-menu .collapse ul ul ul li{position:relative}
+    .btco-hover-menu .collapse ul ul ul li:hover ul{display:block}
+    .btco-hover-menu .collapse ul ul ul ul{position:absolute;top:0;left:-100%;min-width:250px;display:none;z-index:1}
+
+}

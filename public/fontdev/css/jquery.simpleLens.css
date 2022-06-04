@@ -1,0 +1,60 @@
+/* CSS Document */
+.simpleLens-container{
+    display: table;
+    position: relative;
+}
+
+.simpleLens-big-image-container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+	position:relative;
+    height: 100px;
+    width: 100%;
+}
+
+.simpleLens-big-image {
+    width: 100%;
+}
+
+.simpleLens-lens-image {
+    height: auto !important;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin:0;
+    box-shadow:none;
+    float:none;
+    position:relative;
+}
+
+.simpleLens-mouse-cursor{
+	background-color:rgba(0,0,0,0.1);
+	position:absolute;
+	top:0;
+	left:0;
+    
+	
+}
+
+.simpleLens-lens-element {
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
+    height: 480px;
+    left: 105%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 500px;
+    z-index: 300;
+    text-align: center;
+
+}
+
+.simpleLens-lens-element img{
+    position:relative;
+    top:0;
+    left:0;
+    width:auto !important;
+    max-width:none !important;
+}
